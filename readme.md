@@ -13,6 +13,9 @@ I made this application to share images related to movie, series and anime
 
 ## features
 ~ Users can upload an image as post
+
 ~ Users can download others post
+
 ~ Users can comment on posts
+
 ~ Users can like on posts and comments

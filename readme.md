@@ -4,7 +4,7 @@
 1. run `git clone https://github.com/hemakesh-github/cinePins.git`
 2. run `cd cinePins`
 3. make sure you have nodejs installed then run `npm install`
-4. now run nodemon and go to `http://localhost:3000/` in your browser
+4. now run nodemon and go to [http://localhost:3000/] in your browser
 5. You will be able to access the website now
 
 ## about

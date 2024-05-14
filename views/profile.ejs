@@ -1,0 +1,33 @@
+
+    <div class="profile-page">
+    <div class="p-cont">
+        <h1>Profile</h1>
+        <div class="profile-card">
+            <img src="\images\dp\<%=userDP%>" alt="">
+            <div class="p-card-body">
+                <h5 class="card-title">Username: <%= username %></h5>
+                <h6 class="card-subtitle">Email: <%= email %></h6>
+                <h6 class="card-text">Full Name: <%= fullname %></h6>
+            </div>
+        </div>
+    </div>
+                
+    <div class="p-post-cont">
+        <h1>Posts</h1>
+        <div class="Rw">
+            <% for (let i = 0; i < posts.length; i=i+Math.ceil(posts.length/4)) { %>
+               <div class="Col">
+                <% for (let j = i; j < i+Math.ceil(posts.length/4); j++) { %>
+                  <% if (j >= posts.length) { break; } %>
+                  <a href="/post/<%= posts[j]._id %>">
+                    <img src="./images/uploads/<%= posts[j].image %>" class="card-img-top post" value="<%=posts[j]%>" alt="Post Image" style="max-width: 100%;">
+                  </a>
+                <% } %>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

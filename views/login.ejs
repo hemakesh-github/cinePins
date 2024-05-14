@@ -1,0 +1,41 @@
+
+    <div class="lg-container">
+        <div class="content">
+          <p class="header">Welcome to cinePins</p>
+          <%  if(error.length>0){ %>
+            <p class="alert alert-danger"><%= error %></p>
+          <% } %>
+          <form action="/login" method="post">
+            <input name = "username" type="text" placeholder="Email" class="detail" /><br />
+            <input name = "password" type="password" placeholder="Password" class="detail" />
+            <a href="#">Forgot your password?</a>
+            <button class="int login-btn" type="submit">Log in</button>
+          </form>
+          <p class="or">OR</p>
+            <div class="fbk">
+              <i
+                class="fa-brands fa-facebook"
+                style="color: blue; padding-right: 10px; font-size: 19px;"
+              ></i>
+              <a href="#" style="color: black;">Continue with Facebook</a></div><br />
+          <div class="btn ggl">
+
+            <i
+              class= "fa-brands fa-google"
+              style="color: rgb(11, 241, 22); padding-right: 10px; font-size: 19px;"
+            ></i
+            ><a href="#">Continue with Google</a>
+          </div>
+  
+          <footer>
+            <p>
+              By continuing, you agree to cinePins's
+              <b>Terms of Service, Privacy policy.</b>
+            </p>
+            <hr />
+            <p>Not on cinePins yet? <a href="/register">Sign up</a></p>
+          </footer>
+        </div>
+      </div>
+    </body>
+</html>

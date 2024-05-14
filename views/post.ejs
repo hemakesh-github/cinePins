@@ -1,0 +1,73 @@
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card mt-5">
+                    <div class="post-img-wrapper">
+                        <img src="../images/uploads/<%= post.image %>" class="post-img" alt="Post Image">
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title"><%= post.title %></h5>
+                            <div class="likes-wrapper">
+                                
+                                <% if (userId != "") {%>
+                                    <% if(post.likes.includes(userId)) { %>
+                                        <img src="../images/assets/heart-active.png" class="post-dislike-btn" value="<%= post._id%>">
+                                    <% } else { %>
+                                        <img src="../images/assets/heart.png" class="post-like-btn" value="<%= post._id%>">
+                                    <% } %>
+                                <% } else {%>
+                                    <img src="../images/assets/heart.png" class="post-like-btn" value="<%= post._id%>">
+
+                                <% } %>
+                                <span><%= post.likes.length %></span>
+                            </div>
+                            
+                        </div>
+                        <a href="../images/uploads/<%= post.image %>" download>
+                            <button class="btn btn-sm btn-outline-primary" value="<%= post._id%>">Download</button>
+                        </a>
+                        <p class="card-text"><%= post.description%></p>
+                        <hr>
+                        <h6>Comments</h6>
+                        <div class="media">
+                            <div class="media-body">
+                                <% post.comments.forEach((comment) => { %>
+                                    <div class="cmt-wrapper">
+                                        <img src="../images/dp/<%=comment.user.dp%>" alt="User Avatar">
+                                        <p><%= comment.comment %></p>
+                                        <% if (userId != "") {%>
+                                            <% if(comment.likes.includes(userId)) { %>
+                                                <img src="../images/assets/heart-active.png" class="dislike-cmt-btn" value="<%= comment._id%>">
+                                            <% } else { %>
+                                                <img src="../images/assets/heart.png" class="like-cmt-btn" value="<%= comment._id%>">
+                                            <% } %>
+                                        <% } else {%>
+                                            <img src="../images/assets/heart.png" class="like-cmt-btn" value="<%= comment._id%>">
+                                        <% } %>
+                                        <span><%= comment.likes.length %></span>
+
+                                    </div>
+                                <% }); %>
+                            </div>
+                        </div>
+                        <!-- Add more comments here -->
+                        <hr>
+                        <form class="cmt-form">
+                            <div class="form-group">
+                                <label for="comment">Add a comment:</label>
+                                <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary comment-btn" value="<%= post._id %>">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

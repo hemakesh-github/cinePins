@@ -83,7 +83,9 @@ router.post("/upload",isLoggedIn, upload.single("image"), async (req, res)=>{
   if (!req.file){
     res.status(400).send("No files uploaded")
   }
-  const user = req.session.user;
+  const user = await users.findOne({
+    username: req.session.passport.user
+  })
   const post = await posts.create({
     description: req.body.description,
     user: user._id,

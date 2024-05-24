@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "cinepins-423311",
+  "private_key_id": "77624c3be64725a61626d31781ab89d41164274e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDhj+Pr0g4HYWDH\n1DwbadDxnbSKMGj2H27dZRvwaxzmw1B7PZsB58Hm1ESrMr3ryU0jAdG2gPqan7ll\n49iMZihN3xHrsrYy0SZVbn9M+c+UWZeSxLi3G5jAcEc/FB8VWsRBZKaLfuEWqeNC\noKwSAXkSt65DuWYQYCidgKmu7wZw0AfztEb8JclXZQjIqcnqhxQ+DW79qLKM/dtw\n/0qvXSmjcaJHv7LtQ5DoK0epZtdf96lU6rb79+t7A+BfKkHqPGptr4Z5yVdSOu+N\nhWj5nMvjMF8AeCuQZvp/9v1V7Ox+ziVPz43sS8l07FvrabSgvdTMeAQPpCkP+VD/\nE2WJ+kWVAgMBAAECggEADwiYGE+Xv8YtvSPYHbufwXrRXaR8Wmsd6IOkqRF6i6bY\n5l3kxuu7cLcVHJP1NJHmIj8syw0tpsCeirv04uasKQSFHUB8BEcMVwVWVrsPqsON\n5qpV5V5hf/H7zah5qeKy0ejzcLi0J96K1xX+YfTXLPgxFTJ2KwE9s8GvjYlA1KPo\n2WLkhRPxIBL/tiGy5Q80Ye4v7wQ2N2L8/nw7yxX85bnCWgaXfSNmNHqYC7b1rsRf\nbZUf/MfO7jeVoZRmuuqoYomUAIQ6B9znipmlGj0wsxqFjqtQga212++jfMP7GA+Y\npWh02KDMmY0qfr5Dx8vIQ6IdpqQMDt/vpe2UeI7AwQKBgQD14WGuhH6RL0UT854n\nLF9CmE+/h5X599mZSUoOtyIdJcO5GUR+xmVMVii1ih3NbpG+HqSV2orYX8ihXnQZ\nzbGfsnMFTcyoOwB4ITdLzAnW1AivJ4stJ074HRoecUAT2Nq/DdTn74gZ+VUQ0xly\ne6S/kBmRloy82mN5hpzu7ZC68wKBgQDq2G7ZpCsTWZUvX78mkQWB37rDUUI9D3HV\nSs0DRuU/YShHq5zfiaEemXcNiF6GU0U0PYJJV1uCV81OaDYjdnuYQid9xFrGw10y\nh24DobfTSKL1o2ySv3gnVHmBVMPUMQu9LFjCDkAY1uqDmTTqlLaeLbHUa90gFP/k\nQUyYAm+PVwKBgBU+GZBYRg8JBHDK1VkRDlHUkt87OYvVC+mgWVOYIsxd3OD6+93w\nCgRkVTQJ8LU03kaMoy+HKAO1ksHORT2NddEUO7ezlwDZyBqY1AwqXpc+zllDk1Sd\nVsc8zGrg4eZVD+D9su0u1pVX4y+G7WXkpMEgE/VuCk6ul3WCWcCSqbRdAoGBAL71\nop1ieoxPaZmN93a6sYm7jLfJWV0hM+TF4BJsEXkJ3aD5kKPL27FwBHiCjKoZB8rE\nwS411HkWQCEjZ/JKI5HZKReBFHdO4Hd33CMj2r/47lliu6RQALmqXOqnLF1cTDlU\n2A9jWwdXqnW7nGWq6xuP+GvMEZBGwxStbESmpmQdAoGAXsX4XhSuwD7POJiFRV0P\nM4FpnNdrjfLNF6NPaT/yPrta1klCZW6/wCitIACXnX0vCOpitqPG7J6+e7W4asVJ\n8mC5pr4WivJvbknvEdTptvss/YoMJJHaCZwOJnRk6I6W4SdkQcyGy7f4JWNuGmAG\nfXyVpg8BQ+FmxeTPQ5sJO94=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cinepins@cinepins-423311.iam.gserviceaccount.com",
+  "client_id": "105205557230672207394",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cinepins%40cinepins-423311.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

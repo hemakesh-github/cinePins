@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 const plm = require("passport-local-mongoose")
-mongoose.connect("mongodb://127.0.0.1:27017/cinePins")
+mongoose.connect("mongodb+srv://hemakesh8333:hCVGLUEJJL3ERzAt@cluster0.pmaz9mg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/cinePins")
 
 const userSchema = mongoose.Schema({
   username: {

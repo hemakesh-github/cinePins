@@ -12,12 +12,12 @@
     <div id = "nav">
       <div class="nav">
           <div class="nav-left">
-            <span>cinePins</span>
+            <a href="/"><span>cinePins</span></a>
           </div>
           <div class="nav-right">
               <ul>
-                  <li><a href="/">Home</a></li>
-                  <% if (loggedIn) { %>
+                  <li><a href="/" id = "home">Home</a></li>
+                  <% if (typeof loggedIn !== 'undefined' && loggedIn) { %>
                     <div class="authenticated">
                       <li><a href="/logout">Logout</a></li>
                       <li><a href="/upload">Upload</a></li>

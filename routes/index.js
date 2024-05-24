@@ -13,12 +13,13 @@ passport.use(new localStrategy(
   users.authenticate()));
 
 /* GET home page. */
-router.get("/", async function(req, res, next){
+router.get("/", async function(req, res){
   const Allposts = await posts.find();
-  console.log(req.isAuthenticated)
+  console.log(req.isAuthenticated())
   let userDp = req.isAuthenticated() ? req.session.user.dp : "";
   res.render("index", { posts: Allposts, loggedIn: req.isAuthenticated(), userDP: userDp})
 })
+
 router.use(express.urlencoded({extended: false}));
 router.use(bodyParser.json());
 

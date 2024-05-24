@@ -12,8 +12,10 @@ var app = express();
 const expressLayouts = require("express-ejs-layouts")
 
 // view engine setup
-app.use(expressLayouts)
+
 app.set('views', path.join(__dirname, 'views'));
+
+app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
 app.use(flash());

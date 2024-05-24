@@ -98,7 +98,7 @@ router.post("/upload",isLoggedIn, upload.single("image"), async (req, res)=>{
   res.redirect("profile");
 })
 
-router.get("/upload", function(req, res){
+router.get("/upload",isLoggedIn, function(req, res){
   res.render("upload", {loggedIn: req.isAuthenticated(), userDP: req.session.user.dp});
 })
 
